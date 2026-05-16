@@ -18,45 +18,64 @@
 
   <g clip-path="url(#card)">
     <rect x="0" y="0" width="1280" height="360" fill="url(#bg)"/>
-    <rect x="0" y="0" width="1280" height="360" fill="url(#glow)"/>
+    <rect x="0" y="0" width="1280" height="360" fill="url(#glow)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- top accent bar + running sheen -->
     <rect x="0" y="0" width="1280" height="6" fill="url(#accent)"/>
+    <rect x="-220" y="0" width="170" height="6" fill="#ffffff" opacity="0.45">
+      <animate attributeName="x" from="-220" to="1280" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
 
     <!-- ===== left: identity ===== -->
     <text x="64" y="138" font-size="56" font-weight="800" fill="#f8fafc" letter-spacing="-1">BlindSpotMoat</text>
     <text x="556" y="138" font-size="26" font-weight="600" fill="#818cf8">/ NULLTRACK</text>
 
-    <text x="66" y="180" font-size="20" fill="#94a3b8">A falsifiable analysis engine that refuses to assert what it cannot prove.</text>
-    <text x="66" y="210" font-size="14" fill="#64748b">delete the scarce resource (visibility) · is illegibility a finite arbitrage — or a phantom?</text>
+    <text x="66" y="180" font-size="20" fill="#dbe3ee">A falsifiable analysis engine that refuses to assert what it cannot prove.</text>
+    <text x="66" y="210" font-size="15" fill="#9fb0c7">delete the scarce resource (visibility) · is illegibility a finite arbitrage — or a phantom?</text>
 
     <!-- verdict chip -->
-    <rect x="64" y="262" width="290" height="46" rx="23" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
-    <circle cx="92" cy="285" r="6" fill="#5eead4"/>
-    <text x="110" y="290" font-size="16" fill="#94a3b8">verdict</text>
+    <rect x="64" y="262" width="296" height="46" rx="23" fill="#0f172a" stroke="#3b4a63" stroke-width="1.5"/>
+    <circle cx="92" cy="285" r="6" fill="#5eead4">
+      <animate attributeName="r" values="5;7.5;5" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="110" y="290" font-size="16" fill="#9fb0c7">verdict</text>
     <text x="178" y="290" font-size="17" font-weight="700" fill="#5eead4">phantom_moat</text>
-    <text x="372" y="290" font-size="15" fill="#64748b">evidence-blocked provisional — neither accepted nor discarded</text>
+    <text x="378" y="290" font-size="15" fill="#9fb0c7">evidence-blocked provisional — neither accepted nor discarded</text>
 
     <!-- ===== right: dual-track motif ===== -->
-    <text x="900" y="120" font-size="13" font-weight="700" fill="#f59e0b" letter-spacing="1">TRACK P · policy-visible</text>
+    <text x="900" y="118" font-size="14" font-weight="700" fill="#fbbf24" letter-spacing="1">TRACK P · policy-visible</text>
     <line x1="900" y1="140" x2="1216" y2="140" stroke="#f59e0b" stroke-width="3"/>
     <g fill="#f59e0b">
-      <circle cx="930" cy="140" r="6"/><circle cx="1010" cy="140" r="6"/>
-      <circle cx="1090" cy="140" r="6"/><circle cx="1170" cy="140" r="6"/>
+      <circle cx="930" cy="140" r="6"><animate attributeName="opacity" values="1;0.4;1" dur="2.6s" begin="0s" repeatCount="indefinite"/></circle>
+      <circle cx="1010" cy="140" r="6"><animate attributeName="opacity" values="1;0.4;1" dur="2.6s" begin="0.5s" repeatCount="indefinite"/></circle>
+      <circle cx="1090" cy="140" r="6"><animate attributeName="opacity" values="1;0.4;1" dur="2.6s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle cx="1170" cy="140" r="6"><animate attributeName="opacity" values="1;0.4;1" dur="2.6s" begin="1.5s" repeatCount="indefinite"/></circle>
     </g>
-    <text x="1216" y="120" font-size="12" font-weight="700" fill="#f59e0b" text-anchor="end">SEEN</text>
+    <text x="1216" y="118" font-size="13" font-weight="700" fill="#fbbf24" text-anchor="end">SEEN</text>
 
-    <text x="900" y="232" font-size="13" font-weight="700" fill="#64748b" letter-spacing="1">TRACK O · open-source brownfield</text>
-    <line x1="900" y1="252" x2="1100" y2="252" stroke="#475569" stroke-width="3" stroke-dasharray="7 6"/>
-    <line x1="1100" y1="252" x2="1216" y2="252" stroke="#475569" stroke-width="3" stroke-dasharray="7 6" opacity="0.35"/>
-    <g fill="none" stroke="#475569" stroke-width="2">
+    <text x="900" y="232" font-size="14" font-weight="700" fill="#9fb0c7" letter-spacing="1">TRACK O · open-source brownfield</text>
+    <line x1="900" y1="252" x2="1100" y2="252" stroke="#7c8aa3" stroke-width="3" stroke-dasharray="7 6">
+      <animate attributeName="stroke-dashoffset" from="26" to="0" dur="1.7s" repeatCount="indefinite"/>
+    </line>
+    <line x1="1100" y1="252" x2="1216" y2="252" stroke="#7c8aa3" stroke-width="3" stroke-dasharray="7 6" opacity="0.4">
+      <animate attributeName="stroke-dashoffset" from="26" to="0" dur="1.7s" repeatCount="indefinite"/>
+    </line>
+    <g fill="none" stroke="#7c8aa3" stroke-width="2">
       <circle cx="930" cy="252" r="6"/><circle cx="1010" cy="252" r="6"/>
-      <circle cx="1090" cy="252" r="6" opacity="0.5"/><circle cx="1170" cy="252" r="6" opacity="0.25"/>
+      <circle cx="1090" cy="252" r="6" opacity="0.5"/><circle cx="1170" cy="252" r="6" opacity="0.28"/>
     </g>
-    <ellipse cx="1120" cy="252" rx="116" ry="40" fill="none" stroke="#334155" stroke-width="1.5" stroke-dasharray="3 5"/>
-    <text x="1216" y="232" font-size="12" font-weight="700" fill="#64748b" text-anchor="end">ILLEGIBLE</text>
-    <text x="1120" y="306" font-size="11" fill="#475569" text-anchor="middle">structural blind spot</text>
+    <ellipse cx="1120" cy="252" rx="116" ry="40" fill="none" stroke="#5b6a83" stroke-width="1.5" stroke-dasharray="3 5">
+      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="rx" values="112;120;112" dur="3.4s" repeatCount="indefinite"/>
+    </ellipse>
+    <text x="1216" y="232" font-size="13" font-weight="700" fill="#9fb0c7" text-anchor="end">ILLEGIBLE</text>
+    <text x="1120" y="306" font-size="13" fill="#94a3b8" text-anchor="middle">structural blind spot</text>
 
-    <!-- ===== footer strip ===== -->
-    <text x="64" y="338" font-size="12" fill="#475569">7-AI review 7/7 revise · 6-AI collection 6/6 fabricated=0 · Python stdlib-only · MIT</text>
-    <text x="1216" y="338" font-size="12" fill="#475569" text-anchor="end">research instrument — not investment advice</text>
+    <!-- ===== footer strip (contrast raised) ===== -->
+    <text x="64" y="338" font-size="13" fill="#94a3b8">7-AI review 7/7 revise · 6-AI collection 6/6 fabricated=0 · Python stdlib-only · MIT</text>
+    <text x="1216" y="338" font-size="13" fill="#94a3b8" text-anchor="end">research instrument — not investment advice</text>
   </g>
 </svg>

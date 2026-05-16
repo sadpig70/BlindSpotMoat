@@ -1,0 +1,36 @@
+reviewer_id: "Gemini"
+session_hash: "K9B3X7V2"
+reviewed_at: "2026-05-16T06:34:22Z"
+verdict: "revise"
+focus_findings:
+  - focus: 1
+    severity: "critical"
+    issue: "H2 (payback weeks) confounds CAPEX scale with visibility. Track O (software/SBC retrofits) is inherently cheaper than Track P (greenfield gigafactories). The hypothesis does not isolate the RESDEL mechanism; it merely observes that software scales cheaper than concrete. The asserted 8.12 CIX score and 8-14 week payback treat this domain-specific baseline as a novel finding."
+    suggested_fix: "Add H5: 'Transitioning a Track O asset into Track P visibility structurally worsens its unit economics.' This falsifies the mechanism directly, not just the static state."
+  - focus: 2
+    severity: "high"
+    issue: "The set-difference methodology `O - (O ∩ P_visible)` relies on `EntityResolve` between tracks explicitly defined as having 'almost no vocabulary' overlap. NLP/entity matching will fail to find intersections, generating massive FALSE blind spots purely as an artifact of semantic mismatch, artificially inflating the moat_index."
+    suggested_fix: "Precede set-difference with a Functional Equivalence Mapping node that translates Track O capabilities and Track P outputs into a shared abstraction layer before calculating intersections."
+  - focus: 3
+    severity: "critical"
+    issue: "The ReciprocalStandingLayer claims to offer a 'reciprocal obligation contract WITHOUT requiring policy visibility'. This is a legal paradox. Dispute resolution requires a recognized legal entity and jurisdiction. If the entity is legally 'invisible' to the state, the contract is unenforceable. 'Fail-closed' guarantees the project stalls here permanently."
+    suggested_fix: "Design a semi-permeable legal wrapper (e.g., an offshore open-source foundation) that provides minimal legal standing for contract enforcement while remaining opaque to industrial supply-chain audits."
+  - focus: 4
+    severity: "high"
+    issue: "H3 assumes policy growth causes moat growth. This is correlational and historically naive. When an invisible track gains sufficient market share, policy apparatus expands to capture/regulate it, nullifying the moat. Counterexample: Open-source software entering critical infrastructure prompted the EU Cyber Resilience Act (CRA), forcing visibility and liability onto the 'invisible' FOSS track."
+    suggested_fix: "Redefine the moat metric from static 'spot width' to 'Time-to-Capture' (estimating how long before policy instruments adapt to recognize the arbitrage)."
+  - focus: 5
+    severity: "medium"
+    issue: "Missing evaluation of operational survivorship. The 8-14 week payback relies on near-zero capital inputs (Apache-2.0, sub-$100 SBCs). This ignores the hidden cost of FOSS maintainer burnout and hardware attrition. A highly ranked arbitrage target is useless if abandoned in week 10."
+    suggested_fix: "Add an `AssetVitality` node to `UnitEconomicsScoring` to measure maintainer commit frequency drops and hardware lifecycle decay."
+  - focus: 6
+    severity: "medium"
+    issue: "D1-only scope freeze prevents validation of the core DIR_RESDEL lens. A single domain cannot prove 'structural blindness'; it only proves that manufacturing policy is currently outdated. Without cross-domain validation, the 10.0 surprise score is unfalsifiable context-overfit."
+    suggested_fix: "Require a dual-domain baseline (e.g., D1 manufacturing + D2 decentralized energy grids) to verify that the 'invisible track' is a structural economic law, not a domain-specific anomaly."
+additions:
+  - item: "Node: HiddenCostQuantifier"
+    rationale: "Must quantify integration, lack-of-warranty risk, and self-insurance costs. The asserted sub-$100 BOM ignores enterprise integration labor, artificially inflating Track O's arbitrage value."
+  - item: "Hypothesis: Moat Decay Rate (H6)"
+    rationale: "Falsify the assumption that the moat is permanent. Falsification condition: If the regional MES integrators capture >X% of the market, Track P incumbents will successfully lobby to redefine procurement frameworks to exclude Track O."
+strongest_objection: "The project confuses regulatory lag with a permanent structural moat. The 'invisible' track operates cheaply precisely because it currently evades the compliance, liability, and warranty burdens placed on Track P. The system assumes policy blindness is a fixed constraint. In reality, once Track O scales enough to threaten Track P incumbents or pose systemic risk, policy instruments will forcefully expand to capture it (e.g., via cybersecurity mandates or supply-chain liability laws). The 'moat' is not self-reinforcing; its growth triggers its own destruction. If the RECIP layer cannot legally defend these assets, the entire arbitrage window collapses upon regulatory notice."
+salvage_path: "Pivot the tool from asserting a 'permanent moat' to modeling 'regulatory arbitrage halflife'. Use the pipeline to identify Track O assets, calculate their Time-to-Capture, and exploit the 18-30 month monetization signal specifically as a temporary window before policy inevitably bridges the vocabulary gap."

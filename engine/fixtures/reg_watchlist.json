@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "source_class": "audited",
+    "role": "real_collected_6AI_crossverified",
+    "vintage": "2026-05-16",
+    "source": "primary EU regulatory text — corroborated by grok/deepseek/kimi/qwen/gemini/perplexity (6/6), primary sources adopted (perplexity ETRI 2nd-source replaced)",
+    "warning": "regulatory existence is an official verifiable fact (audited). Applicability/timeline per primary EU docs."
+  },
+  "instruments": [
+    {"id": "EU-CRA", "name": "EU Cyber Resilience Act (Reg (EU) 2024/2847)",
+     "applies_to_manufacturing_software": true, "mandate_type": "mandatory_cert_sbom",
+     "status": "in_force", "effective": "2027",
+     "source_url": "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act",
+     "note": "entry-into-force 2024-12; full application/CE-mark 2027-12-11; SBOM mandatory"},
+    {"id": "NIS2", "name": "NIS2 Directive (Dir (EU) 2022/2555)",
+     "applies_to_manufacturing_software": true, "mandate_type": "audit_visibility",
+     "status": "in_force", "effective": "2024",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022L2555"},
+    {"id": "IEC-62443", "name": "IEC 62443 (Industrial Automation & Control Systems Security)",
+     "applies_to_manufacturing_software": true, "mandate_type": "certification",
+     "status": "in_force", "effective": "2024",
+     "source_url": "https://www.iec.ch/"},
+    {"id": "EU-NZIA", "name": "EU Net-Zero Industry Act",
+     "applies_to_manufacturing_software": false, "mandate_type": "subsidy_only",
+     "status": "in_force", "effective": "2024",
+     "source_url": "https://single-market-economy.ec.europa.eu/industry/sustainability/net-zero-industry-act_en"},
+    {"id": "IRA-45X", "name": "US IRA Section 45X Advanced Manufacturing Production Credit",
+     "applies_to_manufacturing_software": false, "mandate_type": "subsidy_only",
+     "status": "in_force", "effective": "2022",
+     "source_url": "https://www.irs.gov/credits-deductions/advanced-manufacturing-production-credit"}
+  ],
+  "compliance_mandate_density_series": [
+    ["2022", 0.20], ["2023", 0.30], ["2024", 0.33], ["2025", 0.40],
+    ["2026", 0.67], ["2027", 1.00]
+  ],
+  "density_basis": "CRA timeline-anchored (kimi audited series, corroborated by deepseek/grok). 2026 = CRA vuln-reporting active; 2027 = CRA full application."
+}

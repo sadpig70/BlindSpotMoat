@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "source_class": "public_unaudited",
+    "role": "real_collected_6AI_crossverified",
+    "vintage": "2026-05-16",
+    "source": "listed-incumbent market data + subsidy-program anchors; tickers cross-corroborated by deepseek/kimi/qwen/gemini/grok",
+    "warning": "A8: public market data is NOT audited deployment evidence. Track P comparator redefined to listed MES/MV vendors (NOT CRMA raw-materials 47 — category-conflation corrected per COLLATION.md)."
+  },
+  "assets": [
+    {"asset_id": "P-rockwell", "name": "Rockwell Automation", "track": "P",
+     "topics": ["mes", "scada", "industrial-automation", "factory-software"],
+     "credit_type": "listed_incumbent", "tech_maturity": 0.0, "reliability": 0.0,
+     "reported_payback_weeks": null, "source_url": "https://finance.yahoo.com/quote/ROK"},
+    {"asset_id": "P-siemens", "name": "Siemens AG (Digital Industries MES/SCADA)", "track": "P",
+     "topics": ["mes", "scada", "industrial-software"],
+     "credit_type": "listed_incumbent", "tech_maturity": 0.0, "reliability": 0.0,
+     "reported_payback_weeks": null, "source_url": "https://finance.yahoo.com/quote/SIE.DE"},
+    {"asset_id": "P-cognex", "name": "Cognex Corporation", "track": "P",
+     "topics": ["machine-vision", "defect-detection"],
+     "credit_type": "listed_incumbent", "tech_maturity": 0.0, "reliability": 0.0,
+     "reported_payback_weeks": null, "source_url": "https://finance.yahoo.com/quote/CGNX"},
+    {"asset_id": "P-emerson", "name": "Emerson Electric Co", "track": "P",
+     "topics": ["scada", "mes"], "credit_type": "listed_incumbent",
+     "tech_maturity": 0.0, "reliability": 0.0, "reported_payback_weeks": null,
+     "source_url": "https://finance.yahoo.com/quote/EMR"},
+    {"asset_id": "P-keyence", "name": "Keyence Corporation", "track": "P",
+     "topics": ["machine-vision", "sensors"], "credit_type": "listed_incumbent",
+     "tech_maturity": 0.0, "reliability": 0.0, "reported_payback_weeks": null,
+     "source_url": "https://finance.yahoo.com/quote/6861.T"},
+    {"asset_id": "P-ira45x-program", "name": "IRA 45X qualifying facilities (announced)",
+     "track": "P", "topics": ["clean-energy-manufacturing"],
+     "capex_eur": 186000000000.0, "credit_type": "IRA-45X",
+     "tech_maturity": 0.0, "reliability": 0.0,
+     "source_url": "https://www.atlasevhub.com/weekly-digest/nearly-186-billion-in-investments-linked-to-45x-qualifying-facilities/"},
+    {"asset_id": "P-crma-strategic-47", "name": "CRMA 47 strategic projects",
+     "track": "P", "topics": ["critical-raw-materials"],
+     "capex_eur": 22500000000.0, "credit_type": "CRMA-strategic",
+     "tech_maturity": 0.0, "reliability": 0.0,
+     "source_url": "https://www.iea.org/policies/26758-strategic-projects-of-the-crma"}
+  ],
+  "policy_spend_series": [
+    ["2024", 22500000000.0], ["2025", 186000000000.0]
+  ],
+  "policy_spend_note": "sparse anchors only (CRMA EUR22.5bn 2024 / IRA45X USD186bn announced 2025). Annual manufacturing-isolated series NOT publicly available (6/6 collectors) -> H3 timeseries inconclusive by design."
+}

@@ -1,0 +1,60 @@
+collector_id: "Grok-xAI"
+collected_at: "2026-05-16T10:45:00Z"
+session_hash: "grokx7p4"
+scope_covered: { D1: true, D2: "none" }
+
+honesty_attestation:
+  fabricated_values: 0
+  fields_returned_null_due_to_unavailable: 28
+  overall_confidence: "medium"
+  hardest_gap: "H0 deployment_evidence: No publicly available audited production-scale metrics (≥1000 unit/yr, ≥95% uptime, ≥24 months) for open-source brownfield retrofit stacks; such data is internal or under integrator NDAs."
+
+trackP_assets:
+  - { asset_id: "nzia_strategic_projects_registry", name: "NZIA Strategic Projects Public Registry (Net-Zero Industry Act)", sector: "Net-zero technology manufacturing (batteries, solar, wind, electrolysers, etc.)", capex_or_size: "Applications open; member states approve on ongoing basis; no granular public itemized list of designated projects with specific capex/status found", credit_type: null, listed: null, ticker: null, source_url: "https://single-market-economy.ec.europa.eu/industry/sustainability/net-zero-industry-act/strategic-projects-under-nzia/overview_en", source_class: "public_unaudited" }
+  - { asset_id: "ira_45x_advanced_manufacturing_production_credit", name: "Section 45X Advanced Manufacturing Production Credit (IRA)", sector: "Clean energy components (solar wafers/cells/modules, wind components, battery components, inverters, critical minerals)", capex_or_size: null, credit_type: "Advanced Manufacturing Production Tax Credit (AMPTC) - per unit produced and sold", listed: null, ticker: null, source_url: "https://www.federalregister.gov/documents/2024/10/28/2024-24840/advanced-manufacturing-production-credit", source_class: "public_unaudited" }
+  - { asset_id: "rockwell_automation", name: "Rockwell Automation", sector: "MES / Industrial Automation / SCADA", capex_or_size: null, credit_type: null, listed: true, ticker: "ROK", source_url: "https://www.rockwellautomation.com/", source_class: "public_unaudited" }
+  - { asset_id: "siemens", name: "Siemens AG (Digital Industries / MES & Automation)", sector: "MES / SCADA / Industrial Software", capex_or_size: null, credit_type: null, listed: true, ticker: "SIE.DE", source_url: "https://www.siemens.com/global/en/company/about/siemens-at-a-glance.html", source_class: "public_unaudited" }
+
+trackO_assets:
+  - { asset_id: "carbon_mes_erp_qms", name: "Carbon", repo_url: "https://github.com/crbnos/carbon", topics: ["mes", "erp", "qms", "manufacturing", "open-source"], aliases: [], forks: 271, stars: 2100, commit_freq_per_month: null, contributor_count: null, contributor_concentration: null, star_fork_ratio: 7.75, license: "AGPL-3.0 (with commercial licensing option)", bom_usd: null, substitute_for: null, verifiable: true, tech_maturity: 0.75, source_url: "https://github.com/crbnos/carbon", source_class: "public_unaudited" }
+  - { asset_id: "qcadoo_mes", name: "qcadoo MES", repo_url: "https://github.com/qcadoo/mes", topics: ["mes", "manufacturing", "production-management", "web-based", "open-source"], aliases: [], forks: 442, stars: 898, commit_freq_per_month: null, contributor_count: null, contributor_concentration: null, star_fork_ratio: 2.03, license: "AGPL-3.0", bom_usd: null, substitute_for: null, verifiable: true, tech_maturity: 0.9, source_url: "https://github.com/qcadoo/mes", source_class: "public_unaudited" }
+  - { asset_id: "apache_plc4x", name: "Apache PLC4X", repo_url: "https://github.com/apache/plc4x", topics: ["industrial-iot", "plc", "modbus", "opc-ua", "brownfield-connectivity", "protocol-adapter"], aliases: ["PLC4X"], forks: 475, stars: 1600, commit_freq_per_month: null, contributor_count: null, contributor_concentration: null, star_fork_ratio: 3.37, license: "Apache-2.0", bom_usd: null, substitute_for: null, verifiable: true, tech_maturity: 0.85, source_url: "https://github.com/apache/plc4x", source_class: "public_unaudited" }
+  - { asset_id: "openmes", name: "OpenMes", repo_url: "https://github.com/Mes-Open/OpenMes", topics: ["mes", "manufacturing-execution-system", "small-manufacturers", "open-source"], aliases: [], forks: null, stars: null, commit_freq_per_month: null, contributor_count: null, contributor_concentration: null, star_fork_ratio: null, license: "Open Source (details in repo)", bom_usd: null, substitute_for: null, verifiable: true, tech_maturity: 0.6, source_url: "https://github.com/Mes-Open/OpenMes", source_class: "public_unaudited" }
+
+deployment_evidence: 
+  - { asset_id: "carbon_mes_erp_qms", annual_unit_volume: null, uptime_pct: null, months_in_production: null, evidence_type: null, source_url: null, source_class: "unavailable", reason_if_null: "No publicly available audited production deployment metrics found for any Track O asset at scale (≥1000 units/yr, ≥95% uptime, ≥24 months). Academic papers and blog posts discuss Raspberry Pi / SBC retrofits for IIoT gateways and legacy machine connectivity, but these are proofs-of-concept or small pilots, not audited production evidence." }
+  - { asset_id: "qcadoo_mes", annual_unit_volume: null, uptime_pct: null, months_in_production: null, evidence_type: null, source_url: null, source_class: "unavailable", reason_if_null: "No publicly available audited production deployment metrics found. Self-reported or integrator mentions exist in closed contexts but do not meet audited H0 threshold." }
+  - { asset_id: "apache_plc4x", annual_unit_volume: null, uptime_pct: null, months_in_production: null, evidence_type: null, source_url: null, source_class: "unavailable", reason_if_null: "Widely used in industrial connectivity pilots and brownfield protocol bridging (Modbus, OPC-UA etc.), but no audited public production volume/uptime data at scale." }
+
+tco_payback:
+  - { asset_id: "carbon_mes_erp_qms", reported_payback_weeks: null, payback_basis: "pilot_capex", compliance_cost_included: false, source_url: "https://github.com/crbnos/carbon", source_class: "self_reported" }
+  - { asset_id: "qcadoo_mes", reported_payback_weeks: null, payback_basis: "pilot_capex", compliance_cost_included: false, source_url: "https://www.qcadoo.com/en/", source_class: "self_reported" }
+
+sbom_embedding:
+  - { oss_component: null, embedded_in_company: null, evidence: null, source_url: null, source_class: "unavailable" }
+
+regulatory_instruments:
+  - { instrument_id: "eu_cra_2024", name: "Cyber Resilience Act (Regulation (EU) 2024/2847)", applies_to_manufacturing_software: true, mandate_type: "mandatory_cert_sbom", status: "in_force", effective_year: 2027, source_url: "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act" }
+  - { instrument_id: "eu_nis2_2022", name: "NIS2 Directive (EU) 2022/2555", applies_to_manufacturing_software: true, mandate_type: "audit_visibility", status: "in_force", effective_year: 2024, source_url: "https://nis2directive.eu/" }
+  - { instrument_id: "iec_62443", name: "IEC 62443 series (Industrial Automation and Control Systems Security)", applies_to_manufacturing_software: true, mandate_type: "certification", status: "in_force", effective_year: null, source_url: "https://www.iec.ch/" }
+
+timeseries:
+  policy_spend_by_year:
+    - { year: null, amount: null, currency: null, source_url: null, source_class: "unavailable" }
+  compliance_mandate_density_by_year:
+    - { year: null, density_0_1: null, basis: null, source_url: null, source_class: "unavailable" }
+
+market_data:
+  incumbents:
+    - { name: "Rockwell Automation", ticker: "ROK", listed: true, source_url: "https://www.rockwellautomation.com/" }
+    - { name: "Siemens AG", ticker: "SIE.DE", listed: true, source_url: "https://www.siemens.com/" }
+    - { name: "Cognex Corporation", ticker: "CGNX", listed: true, source_url: "https://www.cognex.com/" }
+  regional_integrator_tradable_proxy: { exists: false, detail: "Most regional MES integrators and brownfield retrofit specialists (especially those using low-cost SBC/open-source stacks) are private companies or SMEs. No liquid publicly traded pure-play proxy identified for this segment.", source_url: null }
+
+unavailable_log:
+  - { item: "Granular itemized list of designated NZIA Strategic Projects (entry name, sector, capex, status)", why_unavailable: "Official overview page confirms registry exists and is updated as projects are approved by member states, but no detailed public itemized list with specific project names, sectors, or capex figures was accessible.", where_it_likely_lives: "European Commission / Net-Zero Europe Platform internal records; future updates to https://single-market-economy.ec.europa.eu/industry/sustainability/net-zero-industry-act/strategic-projects-under-nzia/overview_en" }
+  - { item: "Specific named beneficiaries and claimed amounts under IRA 45X (individual company-level)", why_unavailable: "45X is a tax credit claimed on corporate returns; detailed per-company production volumes and credit amounts are not publicly itemized by IRS/Treasury in searchable form (only aggregate program descriptions and some voluntary transfer-market announcements exist).", where_it_likely_lives: "IRS tax filings (confidential), Treasury/IRS aggregate reports, or voluntary company disclosures in earnings calls/press releases" }
+  - { item: "Audited H0 deployment evidence (annual_unit_volume ≥1000, uptime_pct ≥95, months_in_production ≥24) for any Track O asset", why_unavailable: "No publicly disclosed audited metrics meeting the production-scale threshold. Existing references are academic pilots, small deployments, or self-reported integrator mentions.", where_it_likely_lives: "Factory internal telemetry / OEE systems, private integrator case studies under NDA, or certification body audit reports not released to public" }
+  - { item: "Audited full-lifecycle TCO / payback data including compliance & certification costs (Track O vs Track P)", why_unavailable: "Project READMEs and marketing materials contain self-reported claims of low cost or rapid payback on pilot basis only. No independent audited cash-flow studies comparing full-lifecycle costs (including emerging CRA/NIS2 compliance) were found.", where_it_likely_lives: "Internal finance systems of adopting manufacturers or paid consultant benchmark studies (not public)" }
+  - { item: "Public evidence of Track O components (Carbon, qcadoo, PLC4X, OpenMes) embedded via SBOM in Track P vendor products", why_unavailable: "No public SBOM disclosures or contract evidence found showing these specific OSS projects as sub-tier components inside major proprietary MES/SCADA offerings.", where_it_likely_lives: "Vendor internal SBOMs, supply-chain declarations (increasingly required under CRA), or procurement contracts" }
+  - { item: "Year-by-year policy_spend_by_year and compliance_mandate_density_by_year time series", why_unavailable: "High-level program allocations (IRA, EU Green Deal Industrial Plan) are known in aggregate, but granular year-by-year manufacturing-specific spend figures tied to blind-spot relevant instruments were not located in searchable public sources.", where_it_likely_lives: "US Treasury/IRS/DOE reports, European Commission budget execution documents, national implementation reports" }

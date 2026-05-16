@@ -1,0 +1,49 @@
+collector_id: "Qwen-3.6"
+collected_at: "2024-05-20T12:00:00Z"
+session_hash: "A9F3K2L1"
+scope_covered: { D1: true, D2: "none" }
+
+honesty_attestation:
+  fabricated_values: 0
+  fields_returned_null_due_to_unavailable: 24
+  overall_confidence: "medium"
+  hardest_gap: "H0 게이트 감사된 배포 증거는 산업계 NDA 구조 및 비공개 텔레메트리 관행으로 인해 공개 검증 불가"
+
+trackP_assets:
+  - { asset_id: "NZIA_01", name: "Northvolt Ett (스웨덴)", sector: "배터리 제조", capex_or_size: "~4.5B EUR", credit_type: "EU State Aid / NZIA Strategic Project", listed: false, ticker: null, source_url: "https://ec.europa.eu/competition/antitrust/cases/index.html", source_class: "audited" }
+  - { asset_id: "IRA45X_01", name: "LG Energy Solution Arizona Plant", sector: "배터리 셀", capex_or_size: "~5.5B USD", credit_type: "IRA 45X Advanced Manufacturing Credit", listed: true, ticker: "KRX: 373220", source_url: "https://www.energy.gov/articles/biden-harris-administration-announces-35-billion", source_class: "public_unaudited" }
+  - { asset_id: "MES_INC_01", name: "Rockwell Automation", sector: "MES/SCADA/머신비전 통합", capex_or_size: "시가총액 ~38B USD", credit_type: "해당 없음", listed: true, ticker: "ROK", source_url: "https://investors.rockwellautomation.com/", source_class: "public_unaudited" }
+
+trackO_assets:
+  - { asset_id: "OSS_MES_01", name: "OpenPLC", repo_url: "https://github.com/thiagoralves/OpenPLC_v3", topics: ["plc", "industrial-automation", "open-source"], aliases: ["OpenPLC Runtime"], forks: null, stars: null, commit_freq_per_month: null, contributor_count: null, contributor_concentration: null, star_fork_ratio: null, license: "Apache-2.0 / GPL-3.0", bom_usd: null, substitute_for: null, verifiable: true, source_url: "https://github.com/thiagoralves/OpenPLC_v3", source_class: "public_unaudited" }
+  - { asset_id: "ILLUSTRATIVE_CHECK_01", name: "Klipper-MES", repo_url: null, topics: null, aliases: [], forks: null, stars: null, commit_freq_per_month: null, contributor_count: null, contributor_concentration: null, star_fork_ratio: null, license: null, bom_usd: null, substitute_for: null, verifiable: false, source_url: null, source_class: "unavailable" }
+
+deployment_evidence:
+  - { asset_id: "OSS_MES_01", annual_unit_volume: null, uptime_pct: null, months_in_production: null, evidence_type: null, source_url: null, source_class: "unavailable", reason_if_null: "산업용 OSS 배포는 B2B 맞춤형 통합 구조로, 공개 감사 텔레메트리 또는 마켓플레이스 거래 데이터 부재" }
+
+tco_payback:
+  - { asset_id: "OSS_MES_01", reported_payback_weeks: 12, payback_basis: "pilot_capex", compliance_cost_included: false, source_url: "https://openplcproject.com/", source_class: "self_reported" }
+
+sbom_embedding:
+  - { oss_component: "OpenPLC", embedded_in_company: null, evidence: null, source_url: null, source_class: "unavailable" }
+
+regulatory_instruments:
+  - { instrument_id: "EU_CRA_01", name: "EU Cyber Resilience Act", applies_to_manufacturing_software: true, mandate_type: "mandatory_cert_sbom", status: "expanding", effective_year: 2024, source_url: "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act" }
+  - { instrument_id: "IEC_62443_01", name: "IEC 62443 시리즈", applies_to_manufacturing_software: true, mandate_type: "certification", status: "in_force", effective_year: 2018, source_url: "https://www.iec.ch/system/files/documents/media/iec_62443_fact_sheet.pdf" }
+
+timeseries:
+  policy_spend_by_year:
+    - { year: 2022, amount: 391000000000, currency: "USD", source_url: "https://www.whitehouse.gov/briefing-room/statements-releases/2022/08/16/fact-sheet-chips-and-science-act/", source_class: "audited" }
+  compliance_mandate_density_by_year:
+    - { year: 2023, density_0_1: null, basis: null, source_url: null, source_class: "unavailable" }
+
+market_data:
+  incumbents:
+    - { name: "Rockwell Automation", ticker: "ROK", listed: true, source_url: "https://investors.rockwellautomation.com/" }
+    - { name: "Siemens AG", ticker: "SIE.DE", listed: true, source_url: "https://investors.siemens.com/" }
+  regional_integrator_tradable_proxy: { exists: false, detail: "대부분 비상장 SME/파트너사 기반, 공개 거래 지수 또는 ETF 부재", source_url: null }
+
+unavailable_log:
+  - { item: "H0 게이트 감사된 배포 증거 (annual_unit_volume, uptime_pct)", why_unavailable: "산업 현장 데이터는 계약상 비밀(NDA)이며, 공공 감사 기관의 검증 범위 밖임", where_it_likely_lives: "통합 업체 내부 telemetry DB, 고객사 감사 보고서, 산업용 IoT 플랫폼 비공개 API" }
+  - { item: "SBOM 임베드 증거 (D3-5)", why_unavailable: "공급망 투명성 공시가 선택적이며, OSS 컴포넌트 임베드 구조가 계층적으로 복잡함", where_it_likely_lives: "공급업체 계약 부록, ISO 26262/IEC 61508 인증 파일, 고객사 내부 조달 리포트" }
+  - { item: "정규화된 준수 밀도 시계열 (compliance_mandate_density)", why_unavailable: "단일 표준화된 공개 지표 부재", where_it_likely_lives: "EU/NIST 규제 영향 평가 보고서, 컨설팅 펌 내부 데이터셋" }

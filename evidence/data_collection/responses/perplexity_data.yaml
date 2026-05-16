@@ -1,0 +1,261 @@
+collector_id: "Perplexity"
+collected_at: "2026-05-16T10:55:00Z"
+session_hash: "a7c3f9b2"
+scope_covered: { D1: true, D2: "none" }
+
+honesty_attestation:
+  fabricated_values: 0
+  fields_returned_null_due_to_unavailable: 36
+  overall_confidence: "medium"
+  hardest_gap: "H0급 production 배포증거는 공개 웹에서 감사 형태로 거의 노출되지 않아 수집 불가"
+
+trackP_assets:
+  - asset_id: "NZIA_registry_1"
+    name: "Strategic projects under the NZIA public registry"
+    sector: "net-zero technology manufacturing (multi-sector)"
+    capex_or_size: null
+    credit_type: "NZIA Strategic Project status"
+    listed: false
+    ticker: null
+    source_url: "https://single-market-economy.ec.europa.eu/industry/sustainability/net-zero-industry-act/strategic-projects-under-nzia/overview_en"
+    source_class: "audited"
+  - asset_id: "IRA_45X_program"
+    name: "IRA Section 45X Advanced Manufacturing Production Credit"
+    sector: "clean energy components manufacturing (wind, solar, battery, etc.)"
+    capex_or_size: null
+    credit_type: "IRA Section 45X advanced manufacturing production tax credit"
+    listed: false
+    ticker: null
+    source_url: "https://www.irs.gov/credits-deductions/advanced-manufacturing-production-credit"
+    source_class: "audited"
+  - asset_id: "IRA_45X_investments_2025"
+    name: "45X qualifying facilities announced manufacturing investments"
+    sector: "clean energy manufacturing facilities"
+    capex_or_size: "186000000000 USD announced investments linked to 45X-qualifying facilities"
+    credit_type: "IRA Section 45X related investments (announced)"
+    listed: false
+    ticker: null
+    source_url: "https://www.atlasevhub.com/weekly-digest/nearly-186-billion-in-investments-linked-to-45x-qualifying-facilities/"
+    source_class: "public_unaudited"
+
+trackO_assets:
+  - asset_id: "trackO_1"
+    name: "SimpleMES"
+    repo_url: "https://github.com/simplemes/simplemes-core"
+    topics: ["manufacturing-execution-system", "mes", "manufacturing", "production"]
+    aliases: ["SimpleMES Core Modules"]
+    forks: null
+    stars: null
+    commit_freq_per_month: null
+    contributor_count: null
+    contributor_concentration: null
+    star_fork_ratio: null
+    license: null
+    bom_usd: null
+    substitute_for: null
+    verifiable: true
+    source_url: "https://github.com/simplemes/simplemes-core"
+    source_class: "public_unaudited"
+  - asset_id: "trackO_2"
+    name: "WEB_MES"
+    repo_url: "https://github.com/SMEWebify/WEB_MES"
+    topics: ["mes", "manufacturing", "resource-management", "web"]
+    aliases: ["SMEWebify WEB_MES", "WebErpMes"]
+    forks: null
+    stars: null
+    commit_freq_per_month: null
+    contributor_count: null
+    contributor_concentration: null
+    star_fork_ratio: null
+    license: null
+    bom_usd: null
+    substitute_for: null
+    verifiable: true
+    source_url: "https://github.com/SMEWebify/WEB_MES"
+    source_class: "public_unaudited"
+  - asset_id: "trackO_3"
+    name: "Hexastorm"
+    repo_url: "https://github.com/hstarmans/hexastorm"
+    topics: ["fpga", "laser-scanner", "polygon-laser", "motion-control", "pcb", "manufacturing"]
+    aliases: ["Open Source Polygon Laser Scanner"]
+    forks: null
+    stars: null
+    commit_freq_per_month: null
+    contributor_count: null
+    contributor_concentration: null
+    star_fork_ratio: null
+    license: null
+    bom_usd: null
+    substitute_for: null
+    verifiable: true
+    source_url: "https://github.com/hstarmans/hexastorm"
+    source_class: "public_unaudited"
+  - asset_id: "trackO_4"
+    name: "InternVL3 RK3588 NPU"
+    repo_url: "https://github.com/Qengineering/InternVL3-NPU"
+    topics: ["rk3588", "edge-ai", "vision-language-model", "industrial-edge"]
+    aliases: ["InternVL3 VLM on the RK3588 NPU"]
+    forks: null
+    stars: null
+    commit_freq_per_month: null
+    contributor_count: null
+    contributor_concentration: null
+    star_fork_ratio: null
+    license: null
+    bom_usd: null
+    substitute_for: null
+    verifiable: true
+    source_url: "https://github.com/Qengineering/InternVL3-NPU"
+    source_class: "public_unaudited"
+  - asset_id: "trackO_5"
+    name: "pcb-defect-detection"
+    repo_url: "https://github.com/topics/pcb-defect-detection"
+    topics: ["pcb", "defect-detection", "computer-vision", "manufacturing"]
+    aliases: []
+    forks: null
+    stars: null
+    commit_freq_per_month: null
+    contributor_count: null
+    contributor_concentration: null
+    star_fork_ratio: null
+    license: null
+    bom_usd: null
+    substitute_for: null
+    verifiable: true
+    source_url: "https://github.com/topics/pcb-defect-detection"
+    source_class: "public_unaudited"
+  - asset_id: "trackO_6"
+    name: "mechsoftronic"
+    repo_url: "https://github.com/mhouse1/mechsoftronic"
+    topics: ["fpga", "cnc", "motion-control", "manufacturing"]
+    aliases: ["FPGA based CNC Machine controller"]
+    forks: null
+    stars: null
+    commit_freq_per_month: null
+    contributor_count: null
+    contributor_concentration: null
+    star_fork_ratio: null
+    license: null
+    bom_usd: null
+    substitute_for: null
+    verifiable: true
+    source_url: "https://github.com/mhouse1/mechsoftronic"
+    source_class: "public_unaudited"
+
+deployment_evidence:
+  - asset_id: "trackO_1"
+    annual_unit_volume: null
+    uptime_pct: null
+    months_in_production: null
+    evidence_type: null
+    source_url: "https://github.com/simplemes/simplemes-core"
+    source_class: "public_unaudited"
+    reason_if_null: "공개 repo와 데모 서버는 존재하지만, 감사된 형태의 연간 생산 수량·가동률·운영 기간 데이터는 공개 웹에서 확인 불가"
+  - asset_id: "trackO_3"
+    annual_unit_volume: null
+    uptime_pct: null
+    months_in_production: null
+    evidence_type: null
+    source_url: "https://github.com/hstarmans/hexastorm"
+    source_class: "public_unaudited"
+    reason_if_null: "하드웨어/FPGA 기반 레이저 스캐너 설계와 구현 정보는 있으나, 제조라인에서의 감사된 production 배포 메트릭은 제공되지 않음"
+  - asset_id: "trackO_6"
+    annual_unit_volume: null
+    uptime_pct: null
+    months_in_production: null
+    evidence_type: null
+    source_url: "https://github.com/mhouse1/mechsoftronic"
+    source_class: "public_unaudited"
+    reason_if_null: "오픈소스 FPGA CNC 컨트롤러로서 프로젝트 설명과 코드만 존재하며, audited 산업 배포 텔레메트리는 비공개일 가능성이 높고 웹에 없음"
+
+tco_payback:
+  - asset_id: "trackO_1"
+    reported_payback_weeks: null
+    payback_basis: null
+    compliance_cost_included: null
+    source_url: "https://github.com/simplemes/simplemes-core"
+    source_class: "public_unaudited"
+  - asset_id: "trackO_3"
+    reported_payback_weeks: null
+    payback_basis: null
+    compliance_cost_included: null
+    source_url: "https://github.com/hstarmans/hexastorm"
+    source_class: "public_unaudited"
+
+sbom_embedding:
+  - oss_component: "SimpleMES"
+    embedded_in_company: null
+    evidence: null
+    source_url: "https://github.com/simplemes/simplemes-core"
+    source_class: "public_unaudited"
+  - oss_component: "Hexastorm"
+    embedded_in_company: null
+    evidence: null
+    source_url: "https://github.com/hstarmans/hexastorm"
+    source_class: "public_unaudited"
+
+regulatory_instruments:
+  - instrument_id: "EU_CRA"
+    name: "EU Cyber Resilience Act"
+    applies_to_manufacturing_software: true
+    mandate_type: "mandatory_cert_sbom"
+    status: "in_force"
+    effective_year: 2024
+    source_url: "https://ksp.etri.re.kr/ksp/report/file/11950.pdf"
+  - instrument_id: "EU_NIS2"
+    name: "EU NIS2 Directive"
+    applies_to_manufacturing_software: true
+    mandate_type: "audit_visibility"
+    status: "in_force"
+    effective_year: 2024
+    source_url: "https://ksp.etri.re.kr/ksp/report/file/11950.pdf"
+
+timeseries:
+  policy_spend_by_year:
+    - year: 2025
+      amount: null
+      currency: "USD"
+      source_url: "https://www.atlasevhub.com/weekly-digest/nearly-186-billion-in-investments-linked-to-45x-qualifying-facilities/"
+      source_class: "public_unaudited"
+    - year: 2024
+      amount: null
+      currency: "EUR"
+      source_url: "https://energystorageeurope.eu/wp-content/uploads/2023/04/2023.04.05_EASE_NZIA-Analysis_final.pdf"
+      source_class: "public_unaudited"
+  compliance_mandate_density_by_year:
+    - year: 2023
+      density_0_1: null
+      basis: "qualitative increase in EU cyber/compliance obligations (CRA, NIS2 etc.)"
+      source_url: "https://ksp.etri.re.kr/ksp/report/file/11950.pdf"
+      source_class: "public_unaudited"
+
+market_data:
+  incumbents:
+    - name: "Critical Manufacturing (Dassault Systèmes group company example of MES vendor)"
+      ticker: null
+      listed: false
+      source_url: "https://www.criticalmanufacturing.com/blog/using-mes-in-a-brownfield-project/"
+  regional_integrator_tradable_proxy:
+    exists: false
+    detail: "갈무리된 문헌과 블로그 포스트에서는 지역 MES 통합사가 비상장/사설로만 언급되며, 별도 상장 티커 또는 거래가능 지표는 찾지 못함"
+    source_url: "https://www.criticalmanufacturing.com/blog/using-mes-in-a-brownfield-project/"
+
+unavailable_log:
+  - item: "개별 NZIA Strategic Projects의 상세 목록(자산별 capex, 섹터, 상태)"
+    why_unavailable: "공개 registry 페이지는 존재하나, 각 프로젝트별 capex/상세 메트릭을 구조화된 테이블로 제공하지 않거나 추가 탐색이 필요하며, 본 세션에서 확인 불가"
+    where_it_likely_lives: "EU Commission NZIA public registry 세부 페이지 또는 개별 프로젝트 공시/보도자료"
+  - item: "IRA 45X 수혜기업 개별 리스트 및 제조사별 크레딧 규모"
+    why_unavailable: "IRS 및 분석 리포트는 제도 구조와 예시를 제공하지만, 감사된 기업별 수혜 금액 전체 리스트는 공개 요약본에서 제공되지 않음"
+    where_it_likely_lives: "미국 재무부·IRS 상세 통계, 개별 기업 10-K/공시, 상업 데이터베이스"
+  - item: "Track O 오픈소스 MES/머신비전 스택의 audited production 배포 메트릭(H0 조건: unit volume, uptime, months)"
+    why_unavailable: "GitHub repo·논문·블로그에서 활용사례는 언급되더라도, 독립 감사 또는 규제 공시 형식의 텔레메트리는 공개되지 않는 것이 일반적"
+    where_it_likely_lives: "개별 제조사 내부 OT 로그, 시스템 인티그레이터 내부 자료, 비공개 감사 보고서"
+  - item: "Track O vs Track P full-lifecycle TCO/payback(주) audited 비교 데이터"
+    why_unavailable: "공개 웹의 대부분 자료는 벤더/프로젝트 자기보고 ROI 수치에 그치며, 전생애 비용을 포함한 감사된 현금흐름 데이터셋은 찾지 못함"
+    where_it_likely_lives: "컨설팅사 비공개 리포트, 프로젝트 파이낸스 모델, 정부 지원 사업 사후평가"
+  - item: "Track O 컴포넌트의 SBOM 기반 sub-tier embedding 사례"
+    why_unavailable: "공개 SBOM/SPDX 자료에서 특정 오픈소스 MES/FPGA/머신비전 컴포넌트가 특정 상장 제조 SW/장비에 임베드되었다는 명시적 연결고리를 찾지 못함"
+    where_it_likely_lives: "대형 벤더의 상세 SBOM, 고객 계약서, 규제 제출 문서, CISA/EU OSS SBOM 레지스트리"
+  - item: "연도별 제조 보조 정책지출 규모의 정량 시계열(USD/EUR)"
+    why_unavailable: "참조 문헌은 정책 프레임·사례·총량 언급을 제공하나, 제조만을 분리한 연속 시계열 숫자는 별도 데이터 작업이 필요"
+    where_it_likely_lives: "OECD/IMF/World Bank 통계, 각국 산업부 예산 데이터베이스, 전문 정책 데이터 제공사"

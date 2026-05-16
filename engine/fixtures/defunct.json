@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "source_class": "public_unaudited",
+    "role": "real_collected_6AI_crossverified",
+    "vintage": "2026-05-16",
+    "source": "6/6 collectors did not perform an archive-scrape of defunct OSS brownfield repos; public survivorship corpus not collected",
+    "warning": "SurvivorshipFilter input empty -> failure_rate is UNDETERMINED (not 0). Honest gap, not a clean signal."
+  },
+  "defunct": [],
+  "note": "Empty: defunct/failed-repo archive corpus is an AI-uncollectable gap (requires archive.org/GHTorrent-style scrape). Recorded in AUDITED_GAP_HANDOFF.md."
+}

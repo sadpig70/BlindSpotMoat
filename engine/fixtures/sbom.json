@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "source_class": "public_unaudited",
+    "role": "real_collected_6AI_crossverified",
+    "vintage": "2026-05-16",
+    "source": "6/6 collectors: NO public SBOM/SPDX disclosure linking Track O components as sub-tier inside Track P products (CRA SBOM mandate not in force until 2027)",
+    "warning": "DependencyPenetration input empty by EMPIRICAL absence (not omission). embed_rate=0 reflects reality, not a pass."
+  },
+  "edges": {},
+  "note": "Empty: 6-AI cross-verified that SBOM embedding evidence is structurally unavailable pre-CRA-2027. This is an unavailable, not a 'no embedding exists' claim."
+}

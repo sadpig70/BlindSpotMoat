@@ -1,0 +1,455 @@
+collector_id: Kimi-k1.6
+collected_at: '2026-05-16T11:17:17Z'
+session_hash: BSM2026A
+scope_covered:
+  D1: true
+  D2: energy_retrofit
+honesty_attestation:
+  fabricated_values: 0
+  fields_returned_null_due_to_unavailable: 12
+  overall_confidence: medium
+  hardest_gap: 'H0 deployment_evidence: 공개 웹에서 audited production-scale 배포 증거(≥1000unit/yr, ≥95%uptime, ≥24mo)는 오픈소스 brownfield
+    제조 SW의 특성상 기업 납세자/납품 기밀 정보에 해당하여 공개되지 않음. integrator 납품 감사보고서나 공장주의 ISMS 인증 심사 기록에만 존재할 가능성.'
+trackP_assets:
+- asset_id: CRMA-001
+  name: Ageli (Eramet lithium project)
+  sector: critical_raw_materials_extraction_processing
+  capex_or_size: €22.5bn_total_47projects
+  credit_type: CRMA_strategic_project_status
+  listed: true
+  ticker: ERA.PA
+  source_url: https://www.iea.org/policies/26758-strategic-projects-of-the-crma
+  source_class: audited
+- asset_id: NZIA-001
+  name: Talga Lulea Anode Refinery
+  sector: battery_anode_manufacturing
+  capex_or_size: N/A_individual_not_disclosed
+  credit_type: NZIA_strategic_project_status
+  listed: true
+  ticker: TLG.AX
+  source_url: https://talgagroup.eu-central-1.linodeobjects.com/app/uploads/2025/04/16092440/20250416StrategicProjectNZIA_ASX.pdf
+  source_class: audited
+- asset_id: MES-SIE
+  name: Siemens AG (MES/SCADA/Automation)
+  sector: manufacturing_software
+  capex_or_size: N/A
+  credit_type: N/A
+  listed: true
+  ticker: SIE.DE
+  source_url: https://finance.yahoo.com/quote/SIE.DE
+  source_class: public_unaudited
+- asset_id: MES-ROK
+  name: Rockwell Automation Inc (MES/SCADA)
+  sector: manufacturing_software
+  capex_or_size: N/A
+  credit_type: N/A
+  listed: true
+  ticker: ROK
+  source_url: https://finance.yahoo.com/quote/ROK
+  source_class: public_unaudited
+- asset_id: MES-SAP
+  name: SAP SE (MES/ERP)
+  sector: manufacturing_software
+  capex_or_size: N/A
+  credit_type: N/A
+  listed: true
+  ticker: SAP.DE
+  source_url: https://finance.yahoo.com/quote/SAP.DE
+  source_class: public_unaudited
+- asset_id: MES-ABB
+  name: ABB Ltd (SCADA/Robotics)
+  sector: manufacturing_software
+  capex_or_size: N/A
+  credit_type: N/A
+  listed: true
+  ticker: ABB
+  source_url: https://finance.yahoo.com/quote/ABB
+  source_class: public_unaudited
+- asset_id: MES-HON
+  name: Honeywell International Inc (SCADA/MES)
+  sector: manufacturing_software
+  capex_or_size: N/A
+  credit_type: N/A
+  listed: true
+  ticker: HON
+  source_url: https://finance.yahoo.com/quote/HON
+  source_class: public_unaudited
+- asset_id: MES-DSY
+  name: Dassault Systemes SE (MES/PLM)
+  sector: manufacturing_software
+  capex_or_size: N/A
+  credit_type: N/A
+  listed: true
+  ticker: DSY.PA
+  source_url: https://finance.yahoo.com/quote/DSY.PA
+  source_class: public_unaudited
+- asset_id: MES-SU
+  name: Schneider Electric SE (SCADA/MES)
+  sector: manufacturing_software
+  capex_or_size: N/A
+  credit_type: N/A
+  listed: true
+  ticker: SU.PA
+  source_url: https://finance.yahoo.com/quote/SU.PA
+  source_class: public_unaudited
+- asset_id: MES-EMR
+  name: Emerson Electric Co (SCADA/MES)
+  sector: manufacturing_software
+  capex_or_size: N/A
+  credit_type: N/A
+  listed: true
+  ticker: EMR
+  source_url: https://finance.yahoo.com/quote/EMR
+  source_class: public_unaudited
+- asset_id: MES-GEV
+  name: GE Vernova Inc (MES/SCADA)
+  sector: manufacturing_software
+  capex_or_size: N/A
+  credit_type: N/A
+  listed: true
+  ticker: GEV
+  source_url: https://finance.yahoo.com/quote/GEV
+  source_class: public_unaudited
+- asset_id: MV-CGNX
+  name: Cognex Corporation (Machine Vision)
+  sector: machine_vision_software
+  capex_or_size: N/A
+  credit_type: N/A
+  listed: true
+  ticker: CGNX
+  source_url: https://finance.yahoo.com/quote/CGNX
+  source_class: public_unaudited
+- asset_id: IRA45X-AGG
+  name: IRA Section 45X Advanced Manufacturing Credit Aggregate
+  sector: clean_energy_manufacturing
+  capex_or_size: $186bn_announced_investment
+  credit_type: 45X_production_tax_credit
+  listed: null
+  ticker: null
+  source_url: https://www.atlasevhub.com/weekly-digest/nearly-186-billion-in-investments-linked-to-45x-qualifying-facilities/
+  source_class: public_unaudited
+trackO_assets:
+- asset_id: Klipper
+  name: Klipper 3D Printer Firmware
+  repo_url: https://github.com/Klipper3d/klipper
+  topics:
+  - 3d-printing
+  - firmware
+  - motion-control
+  - embedded
+  aliases:
+  - Klipper-MES
+  forks: 5869
+  stars: 11535
+  commit_freq_per_month: null
+  contributor_count: 100
+  contributor_concentration: 0.8
+  star_fork_ratio: 1.97
+  license: GPL-3.0
+  bom_usd: null
+  substitute_for: Klipper-MES (illustrative name — actual repo is 3D printer firmware, not MES)
+  verifiable: true
+  source_url: https://github.com/Klipper3d/klipper
+  source_class: public_unaudited
+- asset_id: OpenPLC
+  name: OpenPLC Runtime and IDE
+  repo_url: https://github.com/thiagoralves/OpenPLC_v3
+  topics:
+  - plc
+  - industrial-automation
+  - iec61131-3
+  - scada
+  - sbc
+  aliases:
+  - FPGA-laser-sync
+  forks: 589
+  stars: 1531
+  commit_freq_per_month: null
+  contributor_count: 38
+  contributor_concentration: 0.51
+  star_fork_ratio: 2.6
+  license: GPL-3.0
+  bom_usd: null
+  substitute_for: FPGA-laser-sync (illustrative name — substitute is IEC 61131-3 compliant open-source PLC runtime for SBCs)
+  verifiable: true
+  source_url: https://github.com/thiagoralves/OpenPLC_v3
+  source_class: public_unaudited
+- asset_id: IMES
+  name: IMES Open Source MES for JobShop
+  repo_url: https://github.com/jukbot/smart-industry
+  topics:
+  - mes
+  - manufacturing
+  - jobshop
+  - scheduling
+  aliases: []
+  forks: 150
+  stars: 435
+  commit_freq_per_month: null
+  contributor_count: 3
+  contributor_concentration: 0.97
+  star_fork_ratio: 2.9
+  license: Apache-2.0
+  bom_usd: null
+  substitute_for: null
+  verifiable: true
+  source_url: https://github.com/jukbot/smart-industry
+  source_class: public_unaudited
+- asset_id: CaSkade-MES
+  name: CaSkade-MES Skill-based MES
+  repo_url: https://github.com/CaSkade-Automation/CaSkade-MES
+  topics:
+  - mes
+  - knowledge-graph
+  - bpmn
+  - skills
+  aliases: []
+  forks: 7
+  stars: 41
+  commit_freq_per_month: null
+  contributor_count: 3
+  contributor_concentration: 0.84
+  star_fork_ratio: 5.86
+  license: null
+  bom_usd: null
+  substitute_for: null
+  verifiable: true
+  source_url: https://github.com/CaSkade-Automation/CaSkade-MES
+  source_class: public_unaudited
+- asset_id: Eryxon-Flow
+  name: Eryxon-Flow MES for Job Shops
+  repo_url: https://github.com/SheetMetalConnect/eryxon-flow
+  topics:
+  - mes
+  - jobshop
+  - sheet-metal
+  - self-hosted
+  aliases: []
+  forks: 2
+  stars: 4
+  commit_freq_per_month: null
+  contributor_count: 3
+  contributor_concentration: 0.68
+  star_fork_ratio: 2.0
+  license: BSL-1.1
+  bom_usd: null
+  substitute_for: null
+  verifiable: true
+  source_url: https://github.com/SheetMetalConnect/eryxon-flow
+  source_class: public_unaudited
+- asset_id: VisionIQ-Defect
+  name: VisionIQ Defect Detection for SMEs
+  repo_url: https://github.com/MayankAgrawal099/VisionIQ-Defect-Detection-for-SMEs
+  topics:
+  - machine-vision
+  - defect-detection
+  - yolov8
+  - sme
+  aliases:
+  - RK3588-DefectNet-Tiny
+  forks: 2
+  stars: 0
+  commit_freq_per_month: null
+  contributor_count: 2
+  contributor_concentration: 0.83
+  star_fork_ratio: 0.0
+  license: MIT
+  bom_usd: null
+  substitute_for: RK3588-DefectNet-Tiny (illustrative name — substitute is YOLOv8-based lightweight defect detection with
+    USB webcam, deployable on SBC)
+  verifiable: true
+  source_url: https://github.com/MayankAgrawal099/VisionIQ-Defect-Detection-for-SMEs
+  source_class: public_unaudited
+- asset_id: ROS-Industrial
+  name: ROS-Industrial Framework
+  repo_url: https://github.com/ros-industrial
+  topics:
+  - ros2
+  - industrial-robotics
+  - automation
+  - manufacturing
+  aliases:
+  - ros2-tropical
+  forks: null
+  stars: null
+  commit_freq_per_month: null
+  contributor_count: null
+  contributor_concentration: null
+  star_fork_ratio: null
+  license: BSD-3-Clause
+  bom_usd: null
+  substitute_for: ros2-tropical (illustrative name — substitute is BSD/Apache-licensed ROS-Industrial framework for manufacturing
+    automation)
+  verifiable: true
+  source_url: https://rosindustrial.org/about/faq
+  source_class: public_unaudited
+deployment_evidence:
+- asset_id: ALL-TrackO
+  annual_unit_volume: null
+  uptime_pct: null
+  months_in_production: null
+  evidence_type: null
+  source_url: null
+  source_class: unavailable
+  reason_if_null: 오픈소스 brownfield 제조 SW의 production-scale 배포 증거(annual unit volume, uptime, months in production)는 공개 웹에 audited
+    형태로 존재하지 않음. 해당 데이터는 (1) 최종 공장주의 납품 감사 보고서, (2) ISO 9001/ISMS 인증 심사 기록, (3) 국가 산업정보화부문의 스마트공장 인증 데이터베이스 등에만 존재할 가능성이 높음.
+    오픈소스 프로젝트는 BSD/Apache 라이선스로 상용 제품 임베드가 가능하나, 해당 기업들이 SBOM을 공개할 법적 의무가 없었기 때문(CRA 2027년부터 의무화). GitHub stars/forks는 활동
+    지표일 뿐 배포 증거가 아님.
+tco_payback:
+- asset_id: ALL-TrackO
+  reported_payback_weeks: null
+  payback_basis: null
+  compliance_cost_included: null
+  source_url: null
+  source_class: unavailable
+sbom_embedding:
+- oss_component: null
+  embedded_in_company: null
+  evidence: null
+  source_url: null
+  source_class: unavailable
+regulatory_instruments:
+- instrument_id: EU-CRA-2024
+  name: EU Cyber Resilience Act (Regulation EU 2024/2847)
+  applies_to_manufacturing_software: true
+  mandate_type: mandatory_cert_sbom
+  status: in_force
+  effective_year: 2027
+  source_url: https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
+- instrument_id: EU-NIS2-2022
+  name: NIS2 Directive (Directive EU 2022/2555)
+  applies_to_manufacturing_software: true
+  mandate_type: audit_visibility
+  status: in_force
+  effective_year: 2024
+  source_url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022L2555
+- instrument_id: IEC-62443-2024
+  name: IEC 62443 Series (Industrial Automation Security Standards)
+  applies_to_manufacturing_software: true
+  mandate_type: certification
+  status: in_force
+  effective_year: 2024
+  source_url: https://webstore.iec.ch/en/publication/62883
+timeseries:
+  policy_spend_by_year:
+  - year: 2021
+    amount: null
+    currency: null
+    source_url: null
+    source_class: unavailable
+  - year: 2022
+    amount: null
+    currency: null
+    source_url: null
+    source_class: unavailable
+  - year: 2023
+    amount: null
+    currency: null
+    source_url: null
+    source_class: unavailable
+  - year: 2024
+    amount: null
+    currency: null
+    source_url: null
+    source_class: unavailable
+  - year: 2025
+    amount: null
+    currency: null
+    source_url: null
+    source_class: unavailable
+  compliance_mandate_density_by_year:
+  - year: 2024
+    density_0_1: 0.33
+    basis: CRA_entered_force_2024.12.10_NIS2_entered_force_2024.10.17_IEC62443_2-1_2024_edition_published
+    source_url: https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
+    source_class: audited
+  - year: 2025
+    density_0_1: 0.33
+    basis: CRA_reporting_obligations_prep_phase_NIS2_enforcement_active
+    source_url: https://www.certivo.com/blog-details/eu-cyber-resilience-act-(cra)-what-manufacturers-must-do-before-enforcement-begins
+    source_class: public_unaudited
+  - year: 2026
+    density_0_1: 0.67
+    basis: CRA_vulnerability_reporting_obligations_active_from_2026.09.11_conformity_assessment_bodies_June_2026
+    source_url: https://cyberstand.eu/cyber-resilience-act-overview
+    source_class: audited
+  - year: 2027
+    density_0_1: 1.0
+    basis: CRA_full_application_2027.12.11_CE_marking_mandatory_all_new_products
+    source_url: https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
+    source_class: audited
+market_data:
+  incumbents:
+  - name: Siemens AG
+    ticker: SIE.DE
+    listed: true
+    source_url: https://finance.yahoo.com/quote/SIE.DE
+  - name: Rockwell Automation Inc
+    ticker: ROK
+    listed: true
+    source_url: https://finance.yahoo.com/quote/ROK
+  - name: SAP SE
+    ticker: SAP.DE
+    listed: true
+    source_url: https://finance.yahoo.com/quote/SAP.DE
+  - name: ABB Ltd
+    ticker: ABB
+    listed: true
+    source_url: https://finance.yahoo.com/quote/ABB
+  - name: Honeywell International Inc
+    ticker: HON
+    listed: true
+    source_url: https://finance.yahoo.com/quote/HON
+  - name: Dassault Systemes SE
+    ticker: DSY.PA
+    listed: true
+    source_url: https://finance.yahoo.com/quote/DSY.PA
+  - name: Schneider Electric SE
+    ticker: SU.PA
+    listed: true
+    source_url: https://finance.yahoo.com/quote/SU.PA
+  - name: Emerson Electric Co
+    ticker: EMR
+    listed: true
+    source_url: https://finance.yahoo.com/quote/EMR
+  - name: GE Vernova Inc
+    ticker: GEV
+    listed: true
+    source_url: https://finance.yahoo.com/quote/GEV
+  - name: Cognex Corporation
+    ticker: CGNX
+    listed: true
+    source_url: https://finance.yahoo.com/quote/CGNX
+  regional_integrator_tradable_proxy:
+    exists: false
+    detail: '지역 MES integrator(implementation-focused SI 업체)는 대부분 비상장 SME로, 공개 거래 가능한 주식이나 ETF가 없음. 예: Critical Manufacturing(포르투갈,
+      AWS-native MES)은 비상장. Forcam(독일), Parsec(미국) 등도 비상장. H4 event study를 위한 proxy가 존재하지 않음.'
+    source_url: null
+unavailable_log:
+- item: D3-3 deployment_evidence (H0 gate)
+  why_unavailable: 오픈소스 brownfield 제조 SW의 production-scale 배포 증거(≥1000unit/yr, ≥95%uptime, ≥24mo)는 공개 웹에 audited 형태로 존재하지
+    않음. 해당 데이터는 기업 납세자/납품 기밀 정보에 해당.
+  where_it_likely_lives: (1) 최종 공장주의 ISO 9001/ISMS 인증 심사 기록, (2) 국가 산업정보화부문 스마트공장 인증 DB, (3) MES integrator의 납품 감사보고서, (4)
+    CRA 2027년 이후 SBOM 공개 의무화로 역추적 가능할 것
+- item: D3-4 tco_payback (full-lifecycle)
+  why_unavailable: 통합·유지보수·실패·인증비를 포함한 full-lifecycle payback 데이터는 감사된 형태로 공개되지 않음. README의 '8-14주' 등은 pilot capex 기준 self-reported
+    주장.
+  where_it_likely_lives: (1) 오픈소스 MES 도입 공장의 납세 신고 내역(감가상각비), (2) KfW/지역은행의 스마트공장 대출 심사 자료, (3) 산업기술진흥원의 제조혁신 사업비 집행 보고
+- item: D3-5 sbom_embedding
+  why_unavailable: 오픈소스 컴포넌트가 Track P 기업 제품 낶부에 sub-tier로 임베드된 증거는 SBOM 공개가 2027년(CRA)까지 의무화되지 않았기 때문에 공개되지 않음.
+  where_it_likely_lives: (1) Track P 기업의 낮부 SBOM(SPDX 형식), (2) Linux Foundation OpenSSF SBOM 데이터베이스, (3) Black Duck/Synopsys
+    등 SCA 도구 벤더의 상용 데이터
+- item: D3-7 timeseries policy_spend_by_year
+  why_unavailable: NZIA/CRMA에 특화된 연도별 정책 제조보조금 집계는 EU Commission에서 단일 테이블로 공개하지 않음. 개별 프로그램(Innovation Fund, InvestEU, EIB)의
+    데이터는 산재되어 있음.
+  where_it_likely_lives: (1) EU Budget Execution Reports (DG BUDG), (2) EIB Annual Accounts (clean-tech lending), (3) European
+    Court of Auditors special reports on industrial policy, (4) Bruegel/Kiel Institute policy trackers
+- item: D3-1 IRA 45X individual beneficiary list
+  why_unavailable: IRA 45X는 생산세액공제로, 개별 기업별 신청 내역은 IRS가 납세자 정보 보호로 공개하지 않음.
+  where_it_likely_lives: (1) IRS Statistics of Income (SOI) division의 aggregated business tax credit data, (2) US Treasury
+    Inspector General for Tax Administration (TIGTA) audits, (3) 기업별 10-K 보고서에서 'tax credits' 항목 검색
+- item: NZIA Strategic Projects full list (non-CRMA)
+  why_unavailable: NZIA(제조) 자체의 strategic projects 목록은 2025년 6월 현재 EU Commission 공식 페이지에 게시되지 않음. CRMA(원자재) 47개 목록은 확보했으나
+    NZIA 제조 프로젝트는 Talga 사례 외에는 공개 목록 없음.
+  where_it_likely_lives: (1) European Commission DG GROW 낮부 프로젝트 레지스트리, (2) Net-Zero Europe Platform 산출물, (3) 회원국 산업부의 strategic
+    project 승인 공고

@@ -1,0 +1,44 @@
+reviewer_id: "GPT-5.5 Thinking"
+session_hash: "A7K9Q2M4"
+reviewed_at: "2026-05-16T00:00:00+09:00"
+verdict: "revise"
+focus_findings:
+  - focus: 1
+    severity: "critical"
+    issue: "H1-H4 are mostly observational and do not isolate the project-breaking mechanism. H1 only tests whether an open-source set is absent from policy-visible lists; it does not prove that absence is caused by structural blindness rather than irrelevance, immaturity, low adoption, poor documentation, non-industrial readiness, or lack of buyer trust. H2 assumes payback claims are comparable across policy-funded greenfield projects and small brownfield retrofits, but the denominator, risk horizon, deployment scope, maintenance burden, downtime cost, and survivorship bias are not normalized. H3 is under-specified because 'policy apparatus growth' and 'blind-spot width' can be measured in ways that mechanically co-move. H4 mixes an audit thesis with a financial trading thesis without proving the audit signal is tradable."
+    suggested_fix: "Add a decisive hypothesis: H5: after controlling for technical maturity, deployment scale, buyer profile, vendor support, compliance burden, and documented production use, policy/procurement instruments still systematically exclude Track O assets that outperform visible Track P alternatives on normalized total cost of ownership and time-to-value. Falsify if exclusion disappears after controls or if Track O outperformance is not reproducible."
+  - focus: 2
+    severity: "high"
+    issue: "O - (O∩P_visible) is too crude to represent a blind spot. It treats absence from named lists as structural invisibility, but the same asset may appear under vendor names, integrator offerings, component categories, standards references, grant recipients, procurement lots, or case studies. EntityResolve failure can manufacture false blind spots by failing to link GitHub projects, forks, industrial deployments, integrators, commercial wrappers, and policy category aliases."
+    suggested_fix: "Replace binary set difference with a multi-layer visibility graph: asset -> component -> integrator -> deployment -> procurement category -> policy instrument -> funding vehicle -> trade-press mention. Score visibility by evidence strength and path length, not membership alone. Require negative evidence audits: search policy taxonomies, procurement records, standards bodies, integrator catalogs, and deployment references before labeling an asset invisible."
+  - focus: 3
+    severity: "critical"
+    issue: "The RECIP layer appears internally contradictory. If the moat depends on remaining invisible to policy/legal/procurement systems, then dispute-time standing requires legibility to at least some authority. 'Standing granted while moat=invisibility intact' is asserted, not designed. A fail-closed gate detects the contradiction but does not solve it."
+    suggested_fix: "Separate operational invisibility from legal legibility. Define a private or semi-private standing mechanism: escrowed deployment records, signed integrator attestations, SBOM/provenance logs, insurance-backed warranties, neutral arbitration clauses, and timestamped evidence vaults. The project should preserve policy-market invisibility while creating evidentiary visibility only under dispute or audit."
+  - focus: 4
+    severity: "high"
+    issue: "H3 assumes policy growth strengthens the blind spot, but policy expansion can also absorb, standardize, or expose previously invisible tracks. A counterexample is cybersecurity open source: government SBOM, vulnerability disclosure, FedRAMP, CISA KEV, and software supply-chain policy can make OSS more visible rather than less visible. Another counterexample is semiconductor EDA, where open-source tooling can become policy-visible once domestic capability becomes strategic."
+    suggested_fix: "Reformulate H3 causally: distinguish policy growth that is incumbent-list-based from policy growth that is capability-discovery-based. Test whether new policy instruments increase or decrease visibility of Track O over time using event studies around policy releases, grant calls, procurement changes, and standards updates."
+  - focus: 5
+    severity: "high"
+    issue: "The design lacks a DataReliability and ManipulationResistance layer. GitHub activity, reported payback, BOM cost, forks, and deployment cases are vulnerable to hype, bot activity, cherry-picked case studies, vendor self-reporting, survivorship bias, and non-comparable implementation scopes. Without this layer, the scoring engine can rank noise as arbitrage."
+    suggested_fix: "Add EvidenceQualityGate, SourceTriangulation, DeploymentVerification, PaybackNormalization, OutlierDetection, ManipulationResistance, and TimeSeriesStability nodes. Require every payback claim to include baseline process, capex/opex boundary, labor assumptions, downtime cost, deployment size, verification source, and post-deployment duration."
+  - focus: 6
+    severity: "medium"
+    issue: "D1-only scope-freeze is useful for avoiding over-generalization, but structurally fragile if the entire thesis depends on one domain where data may be sparse, noisy, or non-comparable. A D1-only design may confuse manufacturing-specific opacity with a general invisible-track mechanism."
+    suggested_fix: "Keep D1 as the primary validation domain, but add a narrow D2 shadow-control domain. D2 should not expand the product scope; it should test whether the mechanism survives outside manufacturing. Choose a domain with similar policy/open-source dual tracks but different procurement structure, then compare whether blind-spot dynamics persist."
+additions:
+  - item: "H5 Controlled Structural Blindness Test"
+    rationale: "Needed to distinguish true policy-instrument blindness from ordinary exclusion due to immaturity, low adoption, poor documentation, missing compliance, or weak industrial support."
+  - item: "EvidenceQualityGate"
+    rationale: "Reported payback weeks and BOM claims are central to the thesis but are currently treated as inputs rather than adversarial evidence requiring normalization and verification."
+  - item: "VisibilityGraphMapper"
+    rationale: "Blindness is not binary list absence; it is a graded, multi-hop property across policy, procurement, integrators, standards, media, and deployments."
+  - item: "AdversarialManipulationResistance"
+    rationale: "Once rankings produce monetization signals, actors can manipulate GitHub activity, deployment claims, case studies, or media mentions to enter the blind-spot asset list."
+  - item: "TimeSeriesStabilityMonitor"
+    rationale: "A moat cannot be inferred from a static snapshot; the project needs to show that invisibility and unit-economic advantage persist across policy cycles and market adoption phases."
+  - item: "DisputeStandingEvidenceVault"
+    rationale: "The RECIP layer needs a concrete mechanism for legal/economic standing that does not require public policy visibility during normal operation."
+strongest_objection: "The central thesis may be confusing 'not visible to policy lists' with 'economically exploitable structural blindness.' Absence from NZIA/IRA/VC/trade-press surfaces could simply mean the assets are too immature, too local, too hard to support, too poorly documented, or too small-scale to matter for policy procurement. If that is true, the blind spot is not a moat; it is a quality filter. The whole project then becomes a scanner for under-documented hobbyist or niche retrofit activity rather than a competitiveness engine. :contentReference[oaicite:0]{index=0}"
+salvage_path: "Convert the project from a moat thesis into a falsification-first audit product. First build the visibility graph and evidence-quality gate, then test H5 on a small verified corpus of real deployments. Only after normalized payback and controlled exclusion survive should the design reintroduce moat-strength scoring or monetization signals."
